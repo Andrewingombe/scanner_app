@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from "react-native";
+import { globalStyles } from "../styles/globalStyles";
 
 export default function Home({ navigation }) {
   const handleNavigate = () => {
@@ -15,7 +16,7 @@ export default function Home({ navigation }) {
   };
 
   return (
-    <SafeAreaView style={styles.constainer}>
+    <SafeAreaView style={globalStyles.container}>
       <View>
         <Text style={styles.headingText}>QR-SCANNER</Text>
         <StatusBar style="auto" />
@@ -24,7 +25,7 @@ export default function Home({ navigation }) {
       <View style={styles.imageWrapper}>
         <Image
           style={styles.image}
-          source={require("../assets/qr-code-svgrepo-com.svg")}
+          source={require("../assets/white-qr-code-png-transparent-png.png")}
         />
       </View>
 
@@ -36,13 +37,11 @@ export default function Home({ navigation }) {
   );
 }
 
+// -------------------------------
+// Styling for the home screen
+// -------------------------------
+
 const styles = StyleSheet.create({
-  constainer: {
-    flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
-  },
   headingText: {
     fontSize: 30,
     fontWeight: "bold",
