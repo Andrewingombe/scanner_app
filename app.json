@@ -1,8 +1,10 @@
 {
   "expo": {
-    "name": "test_app",
-    "slug": "test_app",
+    "name": "scanner_application",
+    "slug": "scanner_app",
     "version": "1.0.0",
+    "privacy": "public",
+    "description": "A simple scanner app for barcodes and qr codes",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -13,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
